@@ -47,6 +47,7 @@ fn main() {
         println!("Helga's computer: done!");
 
     });
+    println!("Helga's Komputer: hey hey");
 
 
 
