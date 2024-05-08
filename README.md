@@ -15,7 +15,7 @@ When we introduce several spawners into the system, it ramps up the number of ta
 
 
 ### `drop(spawner)` removed
-<img src="image/Screenshot 2024-05-08 at 18.01.37.png>">
+<img src="image/Screenshot 2024-05-08 at 18.01.37.png">
 
 For a smooth process, it's crucial to remember to call drop(spawner) to signify the end of using a spawner. Think of the spawner as a message queue: whenever we spawn something, it's like dropping a message into the queue. As the executor does its thing, it grabs messages from this queue. Dropping the spawner tells the system that we're done tossing messages into the queue, allowing the executor to finish up any remaining tasks and eventually bring the program to a halt.
 
